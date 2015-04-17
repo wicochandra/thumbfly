@@ -1,8 +1,8 @@
 {
     "name": "wicochandra/thumbfly",
     "type": "library",
-    "description": "",
-    "keywords": [""],
+    "description": "Mini webserver for handle thumbnail on the fly",
+    "keywords": ["cache", "thumbnail", "server", "library"],
     "authors": [
         {
             "name": "Wico Chandra",
