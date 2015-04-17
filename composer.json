@@ -1,0 +1,25 @@
+{
+    "name": "wicochandra/thumbfly",
+    "type": "library",
+    "description": "",
+    "keywords": [""],
+    "authors": [
+        {
+            "name": "Wico Chandra",
+            "email": "wicochandra@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "intervention/image" : "2.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "ThumbFly\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
