@@ -12,12 +12,6 @@ class ThumbFly
      */
     protected $image;
 
-    /**
-     * Image option operation
-     * @var array
-     */
-    protected $options;
-
     protected $validOperation = [
         'resize',
         'fit',
@@ -25,6 +19,17 @@ class ThumbFly
         'widen',
         'greyscale',
         'crop'
+    ];
+
+    protected $options = [
+        'format' => null,
+        'quality' => null
+    ];
+
+    protected $validTypes = [
+        'jpg',
+        'png',
+        'gif',
     ];
 
     /**
@@ -88,6 +93,11 @@ class ThumbFly
     protected function validOperation($operation)
     {
         return in_array($operation, $this->validOperation);
+    }
+
+    protected function validTypes($type)
+    {
+        return in_array($type, $this->validTypes);
     }
 
 }
